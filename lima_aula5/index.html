@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="br-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="styleCarrinho.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+
+
+
+<body>
+    <div class="popup-fundo" id="popup">
+        <div class="popup">
+            <div class="produtos" id="produtos"></div>
+            <hr>
+            <div class="infosCompra">
+                <div class="preco" id="localPrecoCarrinho">
+                    <h1>Total: R$ 00,00</h1>
+                </div>
+                <div class="local-botao">
+                    <button>Finalizar Compra</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="Desconto"></div>
+        <div class="duvidas">
+
+            <div id="menu">
+                <ul>
+                    <li><a href="javascript:void(0)">HOME</a></li>
+                    <li><a href="javascript:void(0)">PRODUTOS</a></li>
+                    <li><a href="javascript:void(0)">DESCONTOS</a></li>
+                    <li><a href="javascript:void(0)">CONTATOS</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="navbar">
+        <div class="logos">
+            <img src="./imagens/logo-nike-4096.png" alt="">
+            <img src="./imagens/jordan-logo-0.png" alt="">
+
+        </div>
+
+
+
+        <div class="pesquisa">
+            <input type="text" placeholder="Buscar produtos">
+            <a href="#">
+                <img src="./imagens/lupa.png" alt="">
+            </a>
+        </div>
+
+        <div class="icones">
+            <div class="bolsa" onclick="abrirCarrinho()">
+                <a href="#">
+                    <img src="./imagens/shopping-bag.png" alt="">
+                </a>
+            </div>
+
+            <div id="burguer" onclick="">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="navbar1">
+    </div>
+    <div class="navbar2"></div>
+    <div class="slide">
+    </div>
+
+    <div class="container">
+        <h1 class="neonText">
+            PRODUTOS
+        </h1>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="produto-item">
+                        <div class="Descriçao">
+                            <p>Nike SB Dunk High </p><h3>1500R$</h3>
+                        </div>
+                        <img src="./imagens/tenis 1.webp" alt="">
+                        <a href="javascript:void(0)" onclick="addCarrinho(0)" class="bt-comprar">COMPRAR</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="produto-item">
+                        <div class="Descriçao">
+                            <p>Women Air Force </p><h3>2000R$</h3>
+                        </div>
+                        <img src="./imagens/tenis 2.webp" alt="">
+                        <a href="javascript:void(0)" onclick="addCarrinho(1)" class="bt-comprar">COMPRAR</a>
+                    </div>
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="produto-item">
+                        <div class="Descriçao">
+                            <p>Nike Air Max Penny </p><h3>1000R$</h3>
+                        </div>
+                        <img src="./imagens/tenis 3.webp" alt="">
+                        <a href="javascript:void(0)" onclick="addCarrinho(2)" class="bt-comprar">COMPRAR</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="produto-item">
+                        <div class="Descriçao">
+                            <p>Nike Air Jordam 4 Retro </p><h3>1500R$</h3>
+                        </div>
+                        <img src="./imagens/tenis 4.webp" alt="">
+                        <a href="javascript:void(0)" onclick="addCarrinho(3)" class="bt-comprar">COMPRAR</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="produto-item">
+                        <div class="Descriçao">
+                            <p>Off-White x Air Force 1 </p><h3>3000R$</h3>
+                        </div>
+                        <img src="./imagens/tenis 5.webp" alt="">
+                        <a href="javascript:void(0)" onclick="addCarrinho(4)" class="bt-comprar">COMPRAR</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="produto-item">
+                        <div class="Descriçao">
+                            <p>Toy Car-Themed </p><h3>1500R$</h3>
+                        </div>
+                        <img src="./imagens/tenis 6.webp" alt="">
+                        <a href="javascript:void(0)" onclick="addCarrinho(5)" class="bt-comprar">COMPRAR</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="produto-item">
+                        <div class="Descriçao">
+                            <p>Nike VaporMax </p><h3>1000R$</h3>
+                        </div>
+                        <img src="./imagens/tenis 7.webp" alt="">
+                        <a href="javascript:void(0)" onclick="addCarrinho(6)" class="bt-comprar">COMPRAR</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="produto-item">
+                        <div class="Descriçao">
+                            <p>Nike Air Jordan 1 Mid </p><h3>1000R$</h3>
+                        </div>
+                        <img src="./imagens/tenis 8.webp" alt="">
+                        <a href="javascript:void(0)" onclick="addCarrinho(7)" class="bt-comprar">COMPRAR</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="produto-item">
+                        <div class="Descriçao">
+                            <p>Nike Air More Uptempo </p><h3>1500R$</h3>
+                        </div>
+                        <img src="./imagens/tenis 9.webp" alt="">
+                        <a href="javascript:void(0)" onclick="addCarrinho(8)" class="bt-comprar">COMPRAR</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+    <div class="anuncio">
+        <img src="./imagens/Nike-Print-Ads-12.jpg" alt="">
+        <img src="./imagens/nike monkey.jpg" alt="">
+        <img src="./imagens/nike_lebron_11.jpg" />
+        <img src="./imagens/anuncio 4.png">
+        <div class="selo">
+            <img src="./imagens/badge (1).png" alt="">
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
+        });
+    </script>
+</body>
+
+</html>

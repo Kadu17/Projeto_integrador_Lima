@@ -1,0 +1,103 @@
+.popup-fundo{
+    display: none;
+    background: rgba(0,0,0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+
+.popup{
+    width: 100%;
+    max-width: 1000px;
+    height: 70%;
+    margin: 5% auto;
+    padding: 20px;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+}
+
+.produtos{
+    max-height: 70%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.produtoCarrinho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 60px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.infosEsquerda {
+    display: flex;
+    align-items: center;
+}
+
+.produtoCarrinho img{
+    width: 90px;
+}
+
+.localInfosProduto{
+    margin-left: 20px;
+}
+
+.localInfosProduto h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.localInfosProduto h3{
+    color: #0FD2AF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.quantidade {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.quantidade img{
+    width: 30px;
+    cursor: pointer;
+}
+
+.infosCompra .preco{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.preco h1{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+
+.local-botao{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.local-botao button{
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
